@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>
+            My Image Gallery 
+        </h1>
+          <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterImages('all')">All</button>
+            <button onclick="filterImages('KLR')">KL Rahul</button>
+            <button onclick="filterImages('MSD')">MS Dhoni</button>
+            <button onclick="filterImages('RD')">Rahul Dravid</button>
+            <button onclick="filterImages('JB')">Jasprit Bumrah</button>
+            <button onclick="filterImages('RG')">Ruturaj Gaikwad</button>
+            <button onclick="filterImages('RS')">Rohit Sharma</button>
+            <button onclick="filterImages('CP')">Cheteswar Pujara</button>
+        </div>
+        <div class="gallery">
+            <img src="images/11.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(1)"/>
+            <img src="images/12.webp" data-category="CP"  alt="Cheteshwar Pujara"   onclick="openLightbox();currentslide(2)"/>
+            <img src="images/13.webp" data-category="RS"  alt="Rohit Sharma"        onclick="openLightbox();currentslide(3)"/>
+            <img src="images/14.webp" data-category="RG"  alt="Ruturaj Gaikwad"     onclick="openLightbox();currentslide(4)"/>
+            <img src="images/15.webp" data-category="RS"  alt="Rohit Sharma"        onclick="openLightbox();currentslide(5)"/>
+            <img src="images/16.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(6)"/>
+            <img src="images/17.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(7)"/>
+            <img src="images/18.webp" data-category="RS"  alt="Rohit Sharma"        onclick="openLightbox();currentslide(8)"/>
+            <img src="images/19.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(9)"/>
+            <img src="images/20.jpg"  data-category="JB"  alt="Jasprit Bumrah"      onclick="openLightbox();currentslide(10)"/>
+            <img src="images/21.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(11)"/>
+            <img src="images/22.webp" data-category="RD"  alt="Rahul Dravid"        onclick="openLightbox();currentslide(12)"/>
+            <img src="images/23.webp" data-category="RG"  alt="Ruturaj Gaikwad"     onclick="openLightbox();currentslide(13)"/>
+            <img src="images/24.webp" data-category="RS"  alt="Rohit Sharma"        onclick="openLightbox();currentslide(14)"/>
+            <img src="images/25.webp" data-category="RG"  alt="Ruturaj Gaikwad"     onclick="openLightbox();currentslide(15)"/>
+            <img src="images/26.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(16)"/>
+            <img src="images/27.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(17)"/>
+            <img src="images/28.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(18)"/>
+            <img src="images/29.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(19)"/>
+            <img src="images/30.webp" data-category="RG"  alt="Ruturaj Gaikwad"     onclick="openLightbox();currentslide(20)"/>
+            <img src="images/31.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(21)"/>
+            <img src="images/32.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(22)"/>
+            <img src="images/33.jpg"  data-category="JB"  alt="Jasprit Bumrah"      onclick="openLightbox();currentslide(23)"/>
+            <img src="images/34.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(24)"/>
+            <img src="images/35.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(25)"/>
+            <img src="images/36.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(26)"/>
+            <img src="images/37.jpg"  data-category="JB"  alt="Jasprit Bumrah"      onclick="openLightbox();currentslide(27)"/>
+            <img src="images/38.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(28)"/>
+            <img src="images/39.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(29)"/>
+            <img src="images/40.webp" data-category="RS"  alt="Rohit Sharma"        onclick="openLightbox();currentslide(30)"/>
+            <img src="images/41.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(31)"/>
+            <img src="images/42.webp" data-category="JB"  alt="Jasprit Bumrah"      onclick="openLightbox();currentslide(32)"/>
+            <img src="images/43.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(33)"/>
+            <img src="images/44.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(34)"/>
+            <img src="images/45.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(35)"/>
+            <img src="images/46.webp" data-category="RG"  alt="Ruturaj Gaikwad"     onclick="openLightbox();currentslide(36)"/>
+            <img src="images/47.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(37)"/>
+            <img src="images/48.webp" data-category="RS"  alt="Rohit Sharma"        onclick="openLightbox();currentslide(38)"/>
+            <img src="images/49.webp" data-category="MSD" alt="MS Dhoni"            onclick="openLightbox();currentslide(39)"/>
+            <img src="images/50.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(40)"/>
+            <img src="images/51.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(41)"/>
+            <img src="images/52.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(42)"/>
+            <img src="images/53.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(43)"/>
+            <img src="images/54.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(44)"/>
+            <img src="images/55.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(45)"/>
+            <img src="images/56.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(46)"/>
+            <img src="images/57.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(47)"/>
+            <img src="images/58.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(48)"/>
+            <img src="images/59.webp" data-category="RG"  alt="Ruturaj Gaikwad"     onclick="openLightbox();currentslide(49)"/>
+            <img src="images/60.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(50)"/>
+            <img src="images/61.webp" data-category="CP"  alt="Cheteshwar Pujara"   onclick="openLightbox();currentslide(51)"/>
+            <img src="images/62.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(52)"/>
+            <img src="images/63.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(53)"/>
+            <img src="images/64.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(54)"/>
+            <img src="images/65.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(55)"/>
+            <img src="images/66.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(56)"/>
+            <img src="images/67.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(57)"/>
+            <img src="images/68.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(58)"/>
+            <img src="images/69.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(59)"/>
+            <img src="images/70.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(60)"/>
+            <img src="images/71.png"  data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(61)"/>
+            <img src="images/72.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(62)"/>
+            <img src="images/73.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(63)"/>
+            <img src="images/74.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(63)"/>
+            <img src="images/75.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(64)"/>
+            <img src="images/76.webp" data-category="KLR" alt="KL Rahul"            onclick="openLightbox();currentslide(65)"/>
+            <img src="images/80.webp" data-category="RD"  alt="Rahul Dravid"        onclick="openLightbox();currentslide(66)"/>
+            <img src="images/81.webp" data-category="CP"  alt="Cheteswar Pujara"    onclick="openLightbox();currentslide(67)"/>
+            <img src="images/82.webp" data-category="RD"  alt="Rahul Dravid"        onclick="openLightbox();currentslide(68)"/>
+            <img src="images/83.webp" data-category="RD"  alt="Rahul Dravid"        onclick="openLightbox();currentslide(69)"/>
+            <img src="images/84.webp" data-category="CP"  alt="Cheteswar Pujara"    onclick="openLightbox();currentslide(70)"/>
+        <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+        <img class="lightbox-slide" src="images/11.webp" />
+        <img class="lightbox-slide" src="images/12.webp" />
+        <img class="lightbox-slide" src="images/13.webp" />
+        <img class="lightbox-slide" src="images/14.webp" />
+        <img class="lightbox-slide" src="images/15.webp" />
+        <img class="lightbox-slide" src="images/16.webp" />
+        <img class="lightbox-slide" src="images/17.webp" />
+        <img class="lightbox-slide" src="images/18.webp" /> 
+        <img class="lightbox-slide" src="images/19.png"  /> 
+        <img class="lightbox-slide" src="images/20.jpg"  /> 
+        <img class="lightbox-slide" src="images/21.png"  /> 
+        <img class="lightbox-slide" src="images/22.webp" />
+        <img class="lightbox-slide" src="images/23.webp" /> 
+        <img class="lightbox-slide" src="images/24.webp" /> 
+        <img class="lightbox-slide" src="images/25.webp" /> 
+        <img class="lightbox-slide" src="images/26.webp" /> 
+        <img class="lightbox-slide" src="images/27.webp" /> 
+        <img class="lightbox-slide" src="images/28.webp" /> 
+        <img class="lightbox-slide" src="images/29.webp" /> 
+        <img class="lightbox-slide" src="images/30.webp" /> 
+        <img class="lightbox-slide" src="images/31.png"  /> 
+        <img class="lightbox-slide" src="images/32.webp" /> 
+        <img class="lightbox-slide" src="images/33.jpg"  /> 
+        <img class="lightbox-slide" src="images/34.png"  /> 
+        <img class="lightbox-slide" src="images/35.png"  /> 
+        <img class="lightbox-slide" src="images/36.png"  /> 
+        <img class="lightbox-slide" src="images/37.jpg"  /> 
+        <img class="lightbox-slide" src="images/38.webp" /> 
+        <img class="lightbox-slide" src="images/39.webp" /> 
+        <img class="lightbox-slide" src="images/40.webp" /> 
+        <img class="lightbox-slide" src="images/41.webp" /> 
+        <img class="lightbox-slide" src="images/42.webp" /> 
+        <img class="lightbox-slide" src="images/43.webp" /> 
+        <img class="lightbox-slide" src="images/44.webp" /> 
+        <img class="lightbox-slide" src="images/45.png"  /> 
+        <img class="lightbox-slide" src="images/46.webp" /> 
+        <img class="lightbox-slide" src="images/47.webp" /> 
+        <img class="lightbox-slide" src="images/48.webp" />
+        <img class="lightbox-slide" src="images/49.webp" /> 
+        <img class="lightbox-slide" src="images/50.webp" /> 
+        <img class="lightbox-slide" src="images/51.png"  /> 
+        <img class="lightbox-slide" src="images/52.png"  /> 
+        <img class="lightbox-slide" src="images/53.png"  /> 
+        <img class="lightbox-slide" src="images/54.png"  /> 
+        <img class="lightbox-slide" src="images/55.png"  /> 
+        <img class="lightbox-slide" src="images/56.png"  /> 
+        <img class="lightbox-slide" src="images/57.png"  /> 
+        <img class="lightbox-slide" src="images/58.png"  /> 
+        <img class="lightbox-slide" src="images/59.webp" /> 
+        <img class="lightbox-slide" src="images/60.png"  /> 
+        <img class="lightbox-slide" src="images/61.webp" /> 
+        <img class="lightbox-slide" src="images/62.png"  /> 
+        <img class="lightbox-slide" src="images/63.png"  /> 
+        <img class="lightbox-slide" src="images/64.png"  />
+        <img class="lightbox-slide" src="images/65.png"  /> 
+        <img class="lightbox-slide" src="images/66.webp" /> 
+        <img class="lightbox-slide" src="images/67.png"  /> 
+        <img class="lightbox-slide" src="images/68.png"  /> 
+        <img class="lightbox-slide" src="images/69.png"  /> 
+        <img class="lightbox-slide" src="images/70.png"  /> 
+        <img class="lightbox-slide" src="images/71.png"  /> 
+        <img class="lightbox-slide" src="images/72.webp" /> 
+        <img class="lightbox-slide" src="images/73.webp" /> 
+        <img class="lightbox-slide" src="images/74.webp" /> 
+        <img class="lightbox-slide" src="images/75.webp" />
+        <img class="lightbox-slide" src="images/76.webp" />
+        <img class="lightbox-slide" src="images/80.webp" />
+        <img class="lightbox-slide" src="images/81.webp" />
+        <img class="lightbox-slide" src="images/82.webp" />
+        <img class="lightbox-slide" src="images/83.webp" /> 
+        <img class="lightbox-slide" src="images/84.webp" />
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </div>
+  <script src="script.js"></script>
+    </body>
+</html>
